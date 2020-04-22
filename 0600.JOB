@@ -1,0 +1,9 @@
+Program File Format Version : 1.6  MechType: 458(HA006B-01)  TotalAxis: 7  AuxAxis: 1
+     ENET1.IP="10.210.200.132"
+     ENET1.LPORT=2197
+     ENET1.RPORT=2197
+     ENET1.OPEN 1
+     PRINT ENET1,DATE$,TIME$,"Zvar cislo: ",V1%
+     V1%=V1%+1
+     ENET1.OPEN 0
+     END
