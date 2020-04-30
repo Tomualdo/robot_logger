@@ -3,7 +3,7 @@ from mpl_toolkits import mplot3d
 import numpy as np
 from numpy  import array
 import matplotlib.pyplot as plt
-with open("0001.JOB") as fjob:
+with open("/home/tom/Projects/proface/robotFiles/mainQl02/20200429/0001.JOB") as fjob:
     job = fjob.read()
 #print (job)
 x=[]
@@ -25,4 +25,7 @@ print ("x: ",x,"y: ",y,"z: ",z)
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 ax.plot3D(x, y, z, 'gray')
+ax.set_xlabel('X')
+ax.set_ylabel('Y')
+ax.set_zlabel('Z')
 plt.show()
